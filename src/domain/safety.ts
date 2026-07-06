@@ -28,7 +28,8 @@ export function assertArtifactSafe(texts: string[]): void {
 
 // Duty-of-care: notes that suggest self-harm or abuse surface resources.
 const DUTY_PATTERNS: RegExp[] = [
-  /\b(hurt|harm|kill)\s+(myself|me)\b/i,
+  /\b(hurt|hurting|harm|harming|kill|killing)\s+(myself|me)\b/i,
+  /\b(end|ending)\s+it\s+all\b/i,
   /\bsuicid/i,
   /\bself[- ]harm/i,
   /\b(hits?|hurting|beats?)\s+me\b/i,
