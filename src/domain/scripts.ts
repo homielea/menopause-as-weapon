@@ -41,7 +41,7 @@ export function buildScript(
 
   if (recent.length > 0) {
     lines.push(
-      `Over the last ${days} ${days === 1 ? 'day' : 'days'} I logged ${recent.length} entries — most often ${evidence}.`
+      `Over the last ${days} ${days === 1 ? 'day' : 'days'} I logged ${recent.length} ${recent.length === 1 ? 'entry' : 'entries'} — most often ${evidence}.`
     );
   } else {
     lines.push(`I'm starting the record now, and I want us aligned on what happens next.`);

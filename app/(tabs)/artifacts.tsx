@@ -95,7 +95,8 @@ export default function Artifacts() {
           <View key={s.label} style={styles.row}>
             <Text style={[type.body, styles.rowLabel]}>{s.label}</Text>
             <Text style={[type.caption, styles.rowStat]}>
-              {s.count}× · {s.daysWithSymptom} days · avg {s.avgSeverity.toFixed(1)} · peak {s.peakSeverity}
+              {s.count}× · {s.daysWithSymptom} {s.daysWithSymptom === 1 ? 'day' : 'days'} · avg{' '}
+              {s.avgSeverity.toFixed(1)} · peak {s.peakSeverity}
             </Text>
           </View>
         ))}

@@ -10,7 +10,8 @@ export const colors = {
   border: '#3A342D',
   text: '#EDE6DA', // bone
   soft: '#A79C8D',
-  ember: '#C4502F', // the fierce accent — burnt ember
+  ember: '#B34523', // the fierce accent — burnt ember (fills; 5.2:1 under bone labels)
+  emberText: '#DD7A55', // ember as TEXT on charcoal — 6.1:1; raw ember reads only 3.9:1
   emberDeep: '#7E3320',
   paper: '#F8F5EE', // receipt paper
   paperInk: '#26221C',

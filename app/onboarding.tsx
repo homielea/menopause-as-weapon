@@ -82,7 +82,7 @@ export default function Onboarding() {
 const styles = StyleSheet.create({
   eyebrow: {
     ...type.caption,
-    color: colors.ember,
+    color: colors.emberText,
     letterSpacing: 3,
     textTransform: 'uppercase',
     marginBottom: spacing.sm,

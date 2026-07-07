@@ -189,7 +189,7 @@ const styles = StyleSheet.create({
   },
   sevActive: { borderColor: colors.ember, backgroundColor: '#33201A' },
   sevText: { color: colors.soft },
-  sevTextActive: { color: colors.ember },
+  sevTextActive: { color: colors.emberText },
   input: {
     backgroundColor: colors.panel,
     borderWidth: 1,
@@ -201,7 +201,7 @@ const styles = StyleSheet.create({
     marginBottom: spacing.sm,
   },
   savedPanel: { borderColor: colors.ember },
-  savedText: { color: colors.ember },
+  savedText: { color: colors.emberText },
   dutyPanel: { borderColor: colors.ember },
   dutyHead: { color: colors.text, marginBottom: spacing.xs },
   dutyLine: { marginTop: spacing.xs },
