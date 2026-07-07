@@ -88,3 +88,18 @@ npm test                # unit tests for domain logic
 | `docs/DESIGN.md` | Visual system, components, voice & banned words |
 | `docs/BACKLOG.md` | Ordered, agent-sized tickets + definition of done |
 | `docs/specs/F*.md` | One spec per MVP feature |
+
+## End-to-end verification
+
+The browser journey that verified this app during development is committed,
+not ephemeral. With the app running on web:
+
+```bash
+npx expo start --web --port 8097   # terminal 1
+npm run e2e                          # terminal 2
+```
+
+`e2e/verify.mjs` drives the full first-run journey in a real browser and
+asserts the product's promises, not just that screens render. `PORT`
+overrides the port; `PW_CHROMIUM` points at a chromium binary when
+playwright's own download isn't available.
